@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dis Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="Dashboard navigation">
+    <div class="sidebar__header">
+      <span class="logo">dis</span>
+      <p class="sidebar__subtitle">Insights</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a class="is-active" href="dashboard.html">Overview</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#personas">Personas</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="index.html">Back to site</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>Logged in as <strong>jane.doe</strong></p>
+      <button class="btn btn-secondary btn-small">Sign out</button>
+    </div>
+  </aside>
+
+  <div class="dashboard__content">
+    <header class="dashboard__header">
+      <h1>Product design overview</h1>
+      <div class="header-actions">
+        <button class="btn btn-secondary">Export</button>
+        <button class="btn btn-primary">Create report</button>
+      </div>
+    </header>
+
+    <section class="grid grid--metrics">
+      <article class="card metric-card">
+        <header>
+          <h2>Adoption</h2>
+          <span class="badge badge--success">+12%</span>
+        </header>
+        <p class="metric">68%</p>
+        <p class="caption">vs last month</p>
+      </article>
+      <article class="card metric-card">
+        <header>
+          <h2>NPS</h2>
+          <span class="badge badge--warning">+4</span>
+        </header>
+        <p class="metric">42</p>
+        <p class="caption">Current net promoter score</p>
+      </article>
+      <article class="card metric-card">
+        <header>
+          <h2>Research backlog</h2>
+          <span class="badge">6 open</span>
+        </header>
+        <p class="metric">18</p>
+        <p class="caption">Studies tracked this quarter</p>
+      </article>
+    </section>
+
+    <section class="grid grid--two">
+      <article class="card">
+        <header class="card__header">
+          <h2>Recent research notes</h2>
+          <a class="link" href="#">View all</a>
+        </header>
+        <ul class="list">
+          <li>
+            <h3>Usability testing — onboarding</h3>
+            <p>Key friction around initial workspace creation resolved.</p>
+          </li>
+          <li>
+            <h3>Customer interviews — enterprise</h3>
+            <p>Security and compliance workflows validated with beta cohort.</p>
+          </li>
+          <li>
+            <h3>Feedback — mobile app</h3>
+            <p>Improved navigation resulted in 25% drop in support tickets.</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card__header">
+          <h2>Team capacity</h2>
+          <a class="link" href="#">Manage</a>
+        </header>
+        <div class="progress-list">
+          <div class="progress-item">
+            <span>Research</span>
+            <div class="progress">
+              <div class="progress__bar" style="width: 80%"></div>
+            </div>
+            <span class="progress__value">80%</span>
+          </div>
+          <div class="progress-item">
+            <span>Design</span>
+            <div class="progress">
+              <div class="progress__bar" style="width: 64%"></div>
+            </div>
+            <span class="progress__value">64%</span>
+          </div>
+          <div class="progress-item">
+            <span>Development</span>
+            <div class="progress">
+              <div class="progress__bar" style="width: 50%"></div>
+            </div>
+            <span class="progress__value">50%</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card card--full" id="reports">
+      <header class="card__header">
+        <h2>Upcoming releases</h2>
+        <button class="btn btn-secondary btn-small">Schedule</button>
+      </header>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Release</th>
+            <th scope="col">Status</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Launch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Workspace sharing</td>
+            <td><span class="badge badge--success">On track</span></td>
+            <td>A. Patel</td>
+            <td>Mar 24</td>
+          </tr>
+          <tr>
+            <td>Mobile dashboards</td>
+            <td><span class="badge badge--warning">At risk</span></td>
+            <td>L. Chen</td>
+            <td>Apr 12</td>
+          </tr>
+          <tr>
+            <td>Insight taxonomy</td>
+            <td><span class="badge">Planning</span></td>
+            <td>J. Doe</td>
+            <td>May 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
