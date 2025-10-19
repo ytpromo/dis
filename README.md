@@ -1,52 +1,50 @@
 # dis UI mockups
 
-This repository now includes a lightweight frontend prototype so designers and developers can preview the landing page and dashboard layouts.
+This repository now includes یک نمونه رابط کاربری ایستا برای برند «ایگرگ تی» که هم صفحه فرود فارسی و هم یک داشبورد چندصفحه‌ای حرفه‌ای را در خود دارد.
 
-## Project structure
+## ساختار پروژه
 
 ```
 frontend/
-├── dashboard.html   # Dashboard view with sidebar, metrics, and content panels
-├── index.html       # Marketing landing page with hero, feature, and contact sections
-└── styles.css       # Shared styling and layout tokens for both pages
+├── index.html                  # صفحه فرود فارسی با معرفی برند ytpromo.net
+├── styles.css                  # استایل‌های مشترک برای سایت و تمام صفحات داشبورد
+├── dashboard.html              # نمای کلی داشبورد با کارت‌های شاخص و میانبرها
+├── dashboard-payouts.html      # مدیریت درخواست‌های تسویه و تایملاین پرداخت
+├── dashboard-payments.html     # ثبت اطلاعات حساب بانکی و کیف پول رمزارزی
+├── dashboard-channels.html     # مدیریت کانال‌های یوتیوب و دسترسی Google Cloud
+├── dashboard-uploader.html     # استودیو آپلود و زمان‌بندی ویدیوها
+├── dashboard-ai.html           # آزمایشگاه ایده‌پرداز هوش مصنوعی
+├── dashboard-analytics.html    # تحلیل عملکرد کانال‌ها و گزارش‌های مالی
+├── dashboard-notifications.html# مرکز اعلان‌ها و تایید واتساپ
+└── dashboard-settings.html     # پروفایل، امنیت و مدیریت دسترسی‌ها
 ```
 
-## Getting started
+## شروع به کار
 
-No build tooling is required. You can open the HTML files directly in your browser or run a simple static server to preview with live reload.
+هیچ ابزار ساختی لازم نیست. فایل‌ها را می‌توان مستقیماً در مرورگر باز کرد یا با یک وب‌سرور ایستا ساده مشاهده نمود.
 
-### Prerequisites
+### پیش‌نیازها
 
-- Node.js (optional, only if you want to run the development server command below)
+- Node.js (اختیاری؛ فقط اگر می‌خواهید از دستورهای توسعه استفاده کنید)
 
-### Install dependencies
+### اجرای وب‌سرور توسعه
 
-There are no runtime dependencies for the static prototype. If you want to use a simple development server you can install `serve` globally:
-
-```bash
-npm install -g serve
-```
-
-### Run a development server
-
-From the repository root run:
+از ریشه مخزن یکی از دستورات زیر را اجرا کنید:
 
 ```bash
 serve frontend
 ```
 
-This will host the UI at `http://localhost:3000`. You can then navigate between `index.html` and `dashboard.html` using the links in the UI.
-
-Alternatively, you can run:
+یا:
 
 ```bash
 npx http-server frontend
 ```
 
-or any other static file server you prefer.
+سپس در مرورگر به `http://localhost:3000` (یا پورتی که ابزار انتخابی نمایش می‌دهد) بروید و از طریق نوار کناری داشبورد بین صفحات مختلف حرکت کنید. صفحه فرود از طریق `index.html` در همان ریشه در دسترس است.
 
-## Customization
+## سفارشی‌سازی
 
-- Update copy and illustrations in `frontend/index.html` to match current messaging.
-- Adjust dashboard widgets in `frontend/dashboard.html` with live data once APIs are available.
-- Modify shared colors, typography, and layout tokens in `frontend/styles.css`.
+- محتوای متنی صفحه فرود (`frontend/index.html`) را برای کمپین‌های جدید به‌روزرسانی کنید.
+- اجزای هر صفحه داشبورد (مانند فرم‌ها یا کارت‌ها) را با داده واقعی یا APIهای بک‌اند جایگزین کنید.
+- رنگ‌ها، تایپوگرافی و شبکه‌بندی را در `frontend/styles.css` تغییر دهید تا با هویت بصری جدید هماهنگ شود.
