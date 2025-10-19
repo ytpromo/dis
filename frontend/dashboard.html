@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>داشبورد ایگرگ تی — ytpromo.net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="ناوبری داشبورد">
+    <div class="sidebar__header">
+      <span class="logo">ایگرگ تی</span>
+      <p class="sidebar__subtitle">پرتال یوتیوبرهای ytpromo.net</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a class="is-active" href="dashboard.html">نمای کلی</a></li>
+        <li><a href="#income">درآمدها</a></li>
+        <li><a href="#research">تحلیل مخاطب</a></li>
+        <li><a href="#reports">گزارش‌ها</a></li>
+        <li><a href="index.html">بازگشت به سایت</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>ورود به عنوان <strong>creator.iran</strong></p>
+      <button class="btn btn-secondary btn-small">خروج</button>
+    </div>
+  </aside>
+
+  <div class="dashboard__content">
+    <header class="dashboard__header" id="income">
+      <h1>نمای کلی درآمد کانال</h1>
+      <div class="header-actions">
+        <button class="btn btn-secondary">دانلود اکسل</button>
+        <button class="btn btn-primary">ایجاد درخواست تسویه</button>
+      </div>
+    </header>
+
+    <section class="grid grid--metrics">
+      <article class="card metric-card">
+        <header>
+          <h2>درآمد تایید شده</h2>
+          <span class="badge badge--success">+۱۸٪</span>
+        </header>
+        <p class="metric">۴٬۳۲۰ دلار</p>
+        <p class="caption">ماه جاری تا امروز</p>
+      </article>
+      <article class="card metric-card">
+        <header>
+          <h2>تسویه‌های معوق</h2>
+          <span class="badge badge--warning">۲ درخواست</span>
+        </header>
+        <p class="metric">۷۲ ساعت</p>
+        <p class="caption">میانگین زمان باقی‌مانده</p>
+      </article>
+      <article class="card metric-card">
+        <header>
+          <h2>میانگین CPM</h2>
+          <span class="badge">۹.۴ دلار</span>
+        </header>
+        <p class="metric">+۱۲٪</p>
+        <p class="caption">نسبت به ماه قبل</p>
+      </article>
+    </section>
+
+    <section class="grid grid--two" id="research">
+      <article class="card">
+        <header class="card__header">
+          <h2>آخرین اطلاعیه‌های پشتیبانی</h2>
+          <a class="link" href="#">مشاهده همه</a>
+        </header>
+        <ul class="list">
+          <li>
+            <h3>تغییر قوانین یوتیوب</h3>
+            <p>کاهش تأخیر گزارش درآمد و به‌روزرسانی داشبورد آمار تا ۲۴ ساعت.</p>
+          </li>
+          <li>
+            <h3>پرداخت مستقیم به ریال</h3>
+            <p>اضافه شدن امکان تسویه به صورت کارت به کارت بانکی در همان روز.</p>
+          </li>
+          <li>
+            <h3>پشتیبانی ویژه کانال‌های گیمینگ</h3>
+            <p>کارمزد ترجیحی برای استریمرها و آنالیز عملکرد هفتگی.</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header class="card__header">
+          <h2>سلامت کانال</h2>
+          <a class="link" href="#">مدیریت هشدارها</a>
+        </header>
+        <div class="progress-list">
+          <div class="progress-item">
+            <span>بازدید ۲۸ روزه</span>
+            <div class="progress" aria-hidden="true">
+              <div class="progress__bar" style="width: 86%"></div>
+            </div>
+            <span class="progress__value">+۸٪</span>
+          </div>
+          <div class="progress-item">
+            <span>زمان تماشا</span>
+            <div class="progress" aria-hidden="true">
+              <div class="progress__bar" style="width: 74%"></div>
+            </div>
+            <span class="progress__value">۱۲۷ ساعت</span>
+          </div>
+          <div class="progress-item">
+            <span>درآمد تبلیغاتی</span>
+            <div class="progress" aria-hidden="true">
+              <div class="progress__bar" style="width: 92%"></div>
+            </div>
+            <span class="progress__value">+۲۱٪</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="card card--full" id="reports">
+      <header class="card__header">
+        <h2>برنامه تسویه‌های آینده</h2>
+        <button class="btn btn-secondary btn-small">تنظیم برنامه</button>
+      </header>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">عنوان درخواست</th>
+            <th scope="col">وضعیت</th>
+            <th scope="col">مسئول پیگیری</th>
+            <th scope="col">تاریخ پرداخت</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>نقد درآمد ژوئن</td>
+            <td><span class="badge badge--success">انجام شد</span></td>
+            <td>م. رضایی</td>
+            <td>۲۸ خرداد</td>
+          </tr>
+          <tr>
+            <td>تسویه اسپانسرشیپ</td>
+            <td><span class="badge badge--warning">در انتظار</span></td>
+            <td>س. محمدی</td>
+            <td>۳ تیر</td>
+          </tr>
+          <tr>
+            <td>تسویه درآمد پشتیبان</td>
+            <td><span class="badge">زمان‌بندی</span></td>
+            <td>ه. نادری</td>
+            <td>۹ تیر</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
