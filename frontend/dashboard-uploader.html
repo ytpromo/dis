@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>استودیو آپلود — ایگرگ تی | ytpromo.net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="ناوبری داشبورد">
+    <div class="sidebar__header">
+      <span class="logo">ایگرگ تی</span>
+      <p class="sidebar__subtitle">پرداخت حرفه‌ای درآمد یوتیوب در ytpromo.net</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a href="dashboard.html">نمای کلی</a></li>
+        <li><a href="dashboard-payouts.html">درخواست‌های تسویه</a></li>
+        <li><a href="dashboard-payments.html">اطلاعات پرداخت</a></li>
+        <li><a href="dashboard-channels.html">کانال‌های یوتیوب</a></li>
+        <li><a class="is-active" href="dashboard-uploader.html">استودیو آپلود</a></li>
+        <li><a href="dashboard-ai.html">ایده‌پرداز AI</a></li>
+        <li><a href="dashboard-analytics.html">تحلیل کانال</a></li>
+        <li><a href="dashboard-notifications.html">اعلان‌ها و واتساپ</a></li>
+        <li><a href="dashboard-settings.html">تنظیمات حساب</a></li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>ورود به عنوان <strong>creator.iran</strong></p>
+      <button class="btn btn-secondary btn-small">خروج ایمن</button>
+      <span class="sidebar__status">پشتیبانی VIP ۲۴/۷ فعال است</span>
+    </div>
+  </aside>
+
+  <main class="dashboard__content">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">آپلود مستقیم در کانال‌های تایید شده</p>
+        <h1>استودیو حرفه‌ای بارگذاری ویدیو با نظارت مالی</h1>
+        <p>
+          از این صفحه می‌توانی کانال تایید شده را انتخاب و ویدیوهای جدید را مستقیماً در یوتیوب منتشر کنی. تمام
+          آپلودها با حساب Google Cloud مجاز شده شما همگام می‌شود.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button">آماده‌سازی پیش‌نمایش</button>
+        <button class="btn btn-outline" type="button">درخواست بررسی محتوا</button>
+      </div>
+    </header>
+
+    <section class="card card--full" aria-label="انتخاب کانال و بارگذاری">
+      <header class="card__header">
+        <h2>آپلود و زمان‌بندی انتشار</h2>
+        <span class="badge badge--success">کانال متصل</span>
+      </header>
+      <form class="form-grid" action="#">
+        <label class="field">
+          <span>انتخاب کانال</span>
+          <select class="input">
+            <option>YGTech فارسی</option>
+            <option>YG Gaming</option>
+            <option>YG Shorts</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>فایل ویدیو</span>
+          <input class="input" type="file" />
+        </label>
+        <label class="field">
+          <span>عنوان ویدیو</span>
+          <input class="input" type="text" placeholder="عنوان جذاب و سئو شده" />
+        </label>
+        <label class="field">
+          <span>توضیحات</span>
+          <textarea class="input" rows="3" placeholder="چکیده محتوا و لینک‌های مهم"></textarea>
+        </label>
+        <label class="field">
+          <span>برچسب‌ها</span>
+          <input class="input" type="text" placeholder="tech, youtube, review" />
+        </label>
+        <label class="field">
+          <span>زمان انتشار</span>
+          <input class="input" type="datetime-local" />
+        </label>
+        <label class="field">
+          <span>وضعیت انتشار</span>
+          <select class="input">
+            <option>Scheduled</option>
+            <option>Public</option>
+            <option>Private</option>
+            <option>Unlisted</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>آپلود thumbnail</span>
+          <input class="input" type="file" />
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-secondary" type="submit">ارسال برای تایید تیم ایگرگ تی</button>
+        </div>
+      </form>
+      <p class="caption">
+        پس از ارسال فرم، روبات واتساپ تایید نهایی را ارسال می‌کند. تا تایید نشدن کد واتساپ انتشار انجام نمی‌شود.
+      </p>
+    </section>
+
+    <section class="grid grid--two" aria-label="پیشرفت آپلود و بازرسی">
+      <article class="card">
+        <header class="card__header">
+          <h2>وضعیت آخرین آپلودها</h2>
+          <a class="link" href="dashboard-analytics.html">مشاهده عملکرد</a>
+        </header>
+        <ul class="list">
+          <li>
+            <span class="list__title">بررسی دستگاه‌های ۲۰۲۴</span>
+            <span class="badge badge--success">منتشر شد</span>
+            <p class="caption">زمان‌بندی: ۵ تیر، تایید واتساپ در ۲ دقیقه انجام شد.</p>
+          </li>
+          <li>
+            <span class="list__title">چالش گیمینگ هفتگی</span>
+            <span class="badge badge--warning">در انتظار تایید</span>
+            <p class="caption">کد واتساپ ارسال شده، منتظر ورود در اعلان‌ها.</p>
+          </li>
+          <li>
+            <span class="list__title">نکات رشد Shorts</span>
+            <span class="badge badge--neutral">در حال پردازش</span>
+            <p class="caption">آپلود ۷۵٪، در حال بهینه‌سازی کیفیت توسط CDN اختصاصی.</p>
+          </li>
+        </ul>
+      </article>
+      <article class="card card--overlay">
+        <header class="card__header">
+          <h2>بررسی کیفیت خودکار</h2>
+          <span class="badge badge--highlight">AI QA</span>
+        </header>
+        <ul class="insights insights--compact">
+          <li>
+            <span class="insights__label">میانگین امتیاز صوت</span>
+            <span class="insights__value">۹.۳ / ۱۰</span>
+          </li>
+          <li>
+            <span class="insights__label">تشخیص کلمات حساس</span>
+            <span class="insights__value badge badge--success">بدون مشکل</span>
+          </li>
+          <li>
+            <span class="insights__label">پیشنهاد بهینه‌سازی</span>
+            <span class="insights__value">افزودن زیرنویس فارسی</span>
+          </li>
+        </ul>
+        <p class="caption">نتایج کامل در لحظه در آزمایشگاه AI قابل مشاهده است.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

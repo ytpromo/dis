@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تنظیمات حساب — ایگرگ تی | ytpromo.net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="ناوبری داشبورد">
+    <div class="sidebar__header">
+      <span class="logo">ایگرگ تی</span>
+      <p class="sidebar__subtitle">پرداخت حرفه‌ای درآمد یوتیوب در ytpromo.net</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a href="dashboard.html">نمای کلی</a></li>
+        <li><a href="dashboard-payouts.html">درخواست‌های تسویه</a></li>
+        <li><a href="dashboard-payments.html">اطلاعات پرداخت</a></li>
+        <li><a href="dashboard-channels.html">کانال‌های یوتیوب</a></li>
+        <li><a href="dashboard-uploader.html">استودیو آپلود</a></li>
+        <li><a href="dashboard-ai.html">ایده‌پرداز AI</a></li>
+        <li><a href="dashboard-analytics.html">تحلیل کانال</a></li>
+        <li><a href="dashboard-notifications.html">اعلان‌ها و واتساپ</a></li>
+        <li><a class="is-active" href="dashboard-settings.html">تنظیمات حساب</a></li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>ورود به عنوان <strong>creator.iran</strong></p>
+      <button class="btn btn-secondary btn-small">خروج ایمن</button>
+      <span class="sidebar__status">پشتیبانی VIP ۲۴/۷ فعال است</span>
+    </div>
+  </aside>
+
+  <main class="dashboard__content">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">پروفایل و امنیت</p>
+        <h1>تنظیمات حساب، احراز دو مرحله‌ای و دسترسی‌ها</h1>
+        <p>
+          برای استفاده حرفه‌ای از سرویس نقد درآمد یوتیوب، اطلاعات هویتی، امنیتی و تیمی خود را در این صفحه تکمیل کن.
+          تمامی تغییرات به‌صورت لحظه‌ای ثبت و در تیم پشتیبانی ایگرگ تی همگام می‌شود.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button">ذخیره تغییرات</button>
+        <button class="btn btn-outline" type="button">درخواست بازبینی امنیتی</button>
+      </div>
+    </header>
+
+    <section class="card card--full" aria-label="اطلاعات پروفایل">
+      <header class="card__header">
+        <h2>پروفایل شخصی</h2>
+        <span class="badge">۹۳٪ تکمیل شده</span>
+      </header>
+      <form class="form-grid" action="#">
+        <label class="field">
+          <span>نام کامل</span>
+          <input class="input" type="text" placeholder="نام و نام خانوادگی" />
+        </label>
+        <label class="field">
+          <span>ایمیل اصلی</span>
+          <input class="input" type="email" placeholder="creator@example.com" />
+        </label>
+        <label class="field">
+          <span>شماره تماس</span>
+          <input class="input" type="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" />
+        </label>
+        <label class="field">
+          <span>شناسه واتساپ تایید شده</span>
+          <input class="input" type="text" value="Verified" disabled />
+        </label>
+        <label class="field">
+          <span>کشور اقامت</span>
+          <select class="input">
+            <option>ایران</option>
+            <option>امارات</option>
+            <option>ترکیه</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>شغل / نقش</span>
+          <input class="input" type="text" placeholder="YouTube Creator" />
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-secondary" type="submit">به‌روزرسانی پروفایل</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="grid grid--two" aria-label="امنیت و دسترسی">
+      <article class="card">
+        <header class="card__header">
+          <h2>احراز هویت دو مرحله‌ای</h2>
+          <span class="badge badge--success">فعال</span>
+        </header>
+        <ol class="steps steps--numbered">
+          <li>اپلیکیشن Google Authenticator یا Microsoft Authenticator را نصب کن.</li>
+          <li>QR کد اختصاصی ایگرگ تی را از طریق پشتیبانی دریافت و اسکن کن.</li>
+          <li>کد ۶ رقمی را وارد کن تا تایید انجام شود.</li>
+        </ol>
+        <form class="form-grid" action="#">
+          <label class="field">
+            <span>کد دو مرحله‌ای</span>
+            <input class="input" type="text" placeholder="••••••" inputmode="numeric" />
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-secondary btn-block" type="submit">تایید کد</button>
+          </div>
+        </form>
+      </article>
+      <article class="card card--overlay">
+        <header class="card__header">
+          <h2>مدیریت اعضای تیم</h2>
+          <span class="badge badge--neutral">۳ کاربر فعال</span>
+        </header>
+        <ul class="list">
+          <li>
+            <span class="list__title">narges@ytpromo.net</span>
+            <p class="caption">نقش: پشتیبان مالی — دسترسی کامل</p>
+          </li>
+          <li>
+            <span class="list__title">support@ytpromo.net</span>
+            <p class="caption">نقش: تیم واتساپ — فقط اعلان‌ها</p>
+          </li>
+          <li>
+            <span class="list__title">analytics@ytpromo.net</span>
+            <p class="caption">نقش: تحلیل داده — دسترسی خواندنی</p>
+          </li>
+        </ul>
+        <div class="card__footer">
+          <button class="btn btn-outline btn-small" type="button">افزودن کاربر جدید</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="card card--full" aria-label="دسترسی‌های گوگل">
+      <header class="card__header">
+        <h2>دسترسی Google Cloud و AdSense</h2>
+        <span class="badge badge--warning">اقدام لازم</span>
+      </header>
+      <div class="split">
+        <div class="split__main">
+          <p>
+            برای اطمینان از پرداخت بدون وقفه، ایمیل رسمی ایگرگ تی باید در هر دو سرویس Google Cloud و AdSense اضافه
+            شود. پس از ارسال ایمیل مالک کانال، تیم ما از طریق واتساپ اتوماسیون اطلاعات دسترسی را ارسال می‌کند.
+          </p>
+          <ul class="checklist">
+            <li class="is-done">افزودن payments@ytpromo.net به AdSense</li>
+            <li class="is-done">دعوت analytics@ytpromo.net به Google Analytics</li>
+            <li>اعطای نقش Viewer در Google Cloud به finance@ytpromo.net</li>
+            <li>تایید دسترسی از سوی ایگرگ تی</li>
+          </ul>
+        </div>
+        <aside class="split__aside">
+          <div class="status status--warning">
+            <h3>در انتظار تایید finance@ytpromo.net</h3>
+            <p class="caption">لطفاً پس از اضافه کردن، اسکرین‌شات را در واتساپ ارسال کن.</p>
+          </div>
+          <div class="status">
+            <h3>پشتیبانی امنیتی</h3>
+            <p class="caption">تماس مستقیم: +971 50 987 65 43</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
