@@ -1250,6 +1250,55 @@ body.dashboard {
   font-size: 0.9rem;
 }
 
+.callout--success {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: rgba(45, 212, 255, 0.4);
+  color: rgba(214, 246, 255, 0.9);
+}
+
+.verification-steps {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.verification-step {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.verification-step.is-active {
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 18px 40px rgba(124, 58, 237, 0.12);
+}
+
+.verification-step__header {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.verification-step__header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.verification-step__header p {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+}
+
+.verification-step .form-grid {
+  margin-top: 0.5rem;
+}
+
+.verification-step .caption {
+  margin: 0;
+}
+
 .ai-lab {
   display: grid;
   gap: 2rem;

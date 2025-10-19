@@ -116,23 +116,53 @@
           <h2>تایید واتساپ</h2>
           <span class="badge badge--success">فعال</span>
         </header>
-        <form class="form-grid" action="#">
-          <label class="field">
-            <span>شماره واتساپ</span>
-            <input class="input" type="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" />
-          </label>
-          <label class="field">
-            <span>کد تایید</span>
-            <input class="input" type="text" placeholder="••••••" inputmode="numeric" />
-          </label>
-          <div class="form-actions">
-            <button class="btn btn-secondary btn-block" type="submit">تایید اعلان واتساپ</button>
-          </div>
-        </form>
-        <p class="caption">
-          شماره باید با حساب گوگل متصل تطبیق داشته باشد. پس از تایید، پیام‌های نرخ تبدیل و یادآور موعد پرداخت به
-          صورت خودکار ارسال می‌شود.
-        </p>
+        <div class="verification-steps">
+          <section class="verification-step is-active" aria-label="مرحله ثبت شماره">
+            <header class="verification-step__header">
+              <span class="badge badge--neutral">مرحله ۱</span>
+              <h3>ثبت شماره واتساپ</h3>
+              <p>شماره‌ای که در واتساپ فعال است را وارد کن تا روبات ایگرگ‌تی کد تایید را برایت ارسال کند.</p>
+            </header>
+            <form class="form-grid" action="#">
+              <label class="field">
+                <span>شماره واتساپ</span>
+                <input class="input" type="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" />
+              </label>
+              <div class="form-actions">
+                <button class="btn btn-secondary btn-block" type="submit">ارسال کد تایید</button>
+              </div>
+            </form>
+            <p class="caption">
+              پس از ارسال، شماره پشتیبانی ما در واتساپ ذخیره می‌شود و لینک دسترسی Google Cloud هم برایت ارسال خواهد
+              شد.
+            </p>
+          </section>
+          <section class="verification-step" aria-label="مرحله وارد کردن کد">
+            <header class="verification-step__header">
+              <span class="badge badge--neutral">مرحله ۲</span>
+              <h3>وارد کردن کد ۶ رقمی</h3>
+              <p>بعد از دریافت پیام واتساپ، کد را در فرم زیر وارد کن تا اعلان‌های فوری فعال شوند.</p>
+            </header>
+            <div class="callout callout--success" role="status">
+              <strong>کد ارسال شد:</strong>
+              <span>پیام حاوی کد از طریق واتساپ رسمی ایگرگ‌تی (YTPromo) ارسال شد. اگر دریافت نکردی، گزینه ارسال مجدد را
+                بزن.</span>
+            </div>
+            <form class="form-grid" action="#">
+              <label class="field">
+                <span>کد تایید</span>
+                <input class="input" type="text" placeholder="۱۲۳۴۵۶" inputmode="numeric" />
+              </label>
+              <div class="form-actions">
+                <button class="btn btn-primary btn-block" type="submit">فعال‌سازی اعلان واتساپ</button>
+              </div>
+            </form>
+            <p class="caption">
+              با تایید کد، اعلان‌های نرخ و موعد پرداخت در لحظه برایت ارسال می‌شود و وضعیت حساب در مرکز اعلان به‌روز
+              خواهد شد.
+            </p>
+          </section>
+        </div>
       </article>
     </section>
 
