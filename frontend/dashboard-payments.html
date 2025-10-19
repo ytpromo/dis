@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اطلاعات پرداخت — ایگرگ تی | ytpromo.net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="ناوبری داشبورد">
+    <div class="sidebar__header">
+      <span class="logo">ایگرگ تی</span>
+      <p class="sidebar__subtitle">پرداخت حرفه‌ای درآمد یوتیوب در ytpromo.net</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a href="dashboard.html">نمای کلی</a></li>
+        <li><a href="dashboard-payouts.html">درخواست‌های تسویه</a></li>
+        <li><a class="is-active" href="dashboard-payments.html">اطلاعات پرداخت</a></li>
+        <li><a href="dashboard-channels.html">کانال‌های یوتیوب</a></li>
+        <li><a href="dashboard-uploader.html">استودیو آپلود</a></li>
+        <li><a href="dashboard-ai.html">ایده‌پرداز AI</a></li>
+        <li><a href="dashboard-analytics.html">تحلیل کانال</a></li>
+        <li><a href="dashboard-notifications.html">اعلان‌ها و واتساپ</a></li>
+        <li><a href="dashboard-settings.html">تنظیمات حساب</a></li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>ورود به عنوان <strong>creator.iran</strong></p>
+      <button class="btn btn-secondary btn-small">خروج ایمن</button>
+      <span class="sidebar__status">پشتیبانی VIP ۲۴/۷ فعال است</span>
+    </div>
+  </aside>
+
+  <main class="dashboard__content">
+    <header class="topbar" aria-label="نوار ابزار سریع">
+      <form class="topbar__search" role="search">
+        <input class="input input--search" type="search" placeholder="جستجو در اطلاعات پرداخت" />
+      </form>
+      <div class="topbar__actions">
+        <button class="btn btn-ghost btn-small" type="button">+ تسویه فوری</button>
+        <button class="btn btn-ghost btn-small" type="button">ارسال تیکت پشتیبانی</button>
+        <span class="topbar__status">
+          <span class="status-dot is-online" aria-hidden="true"></span>
+          سرویس پایدار
+        </span>
+        <div class="topbar__profile">
+          <span class="avatar" aria-hidden="true">CI</span>
+          <div>
+            <strong>creator.iran</strong>
+            <span class="caption">پارتنر پلاتین</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="page-header">
+      <div>
+        <nav class="breadcrumb" aria-label="مسیریابی">
+          <ol>
+            <li><a href="dashboard.html">داشبورد</a></li>
+            <li aria-current="page">اطلاعات پرداخت</li>
+          </ol>
+        </nav>
+        <p class="eyebrow">حساب‌های بانکی و کیف پول</p>
+        <h1>مدیریت اطلاعات پرداخت و دریافت</h1>
+        <p>
+          اطلاعات پرداخت امن‌ترین بخش همکاری با ایگرگ تی است. در این صفحه می‌توانی حساب‌های بانکی، کیف پول‌های
+          رمزارزی و کانال‌های دریافت ارز را ثبت یا به‌روزرسانی کنی.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button">افزودن مقصد جدید</button>
+        <button class="btn btn-outline" type="button">دریافت راهنمای انتقال</button>
+      </div>
+    </header>
+
+    <section class="card card--full" aria-label="فرم اطلاعات بانکی">
+      <header class="card__header">
+        <h2>اطلاعات بانکی بین‌المللی</h2>
+        <span class="badge badge--neutral">IBAN / SWIFT</span>
+      </header>
+      <form class="form-grid" action="#">
+        <label class="field">
+          <span>نام صاحب حساب</span>
+          <input class="input" type="text" placeholder="نام کامل مطابق پاسپورت" />
+        </label>
+        <label class="field">
+          <span>کشور بانک</span>
+          <select class="input">
+            <option>امارات متحده عربی</option>
+            <option>ترکیه</option>
+            <option>قطر</option>
+            <option>ارمنستان</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>IBAN</span>
+          <input class="input" type="text" placeholder="AE070331234567890123456" />
+        </label>
+        <label class="field">
+          <span>SWIFT/BIC</span>
+          <input class="input" type="text" placeholder="EBILAEAD" />
+        </label>
+        <label class="field">
+          <span>نوع ارز دریافتی</span>
+          <select class="input">
+            <option>دلار آمریکا</option>
+            <option>یورو</option>
+            <option>درهم</option>
+            <option>تومان</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>حداقل مبلغ هر انتقال</span>
+          <input class="input" type="number" placeholder="مثلاً 500" />
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-secondary" type="submit">ثبت حساب بانکی</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="grid grid--two" aria-label="روش‌های جایگزین">
+      <article class="card">
+        <header class="card__header">
+          <h2>کیف پول رمزارزی</h2>
+          <span class="badge">USDT / TRC20</span>
+        </header>
+        <form class="form-grid" action="#">
+          <label class="field">
+            <span>آدرس کیف پول</span>
+            <input class="input" type="text" placeholder="TPpX...3afR" />
+          </label>
+          <label class="field">
+            <span>شناسه تراکنش نمونه</span>
+            <input class="input" type="text" placeholder="#123ABC456" />
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-secondary btn-block" type="submit">ذخیره آدرس رمزارزی</button>
+          </div>
+        </form>
+        <p class="caption">برای امنیت بیشتر، برداشت رمزارزی فقط پس از تایید تلفنی فعال می‌شود.</p>
+      </article>
+      <article class="card card--overlay">
+        <header class="card__header">
+          <h2>تاریخچه پرداخت به مقاصد</h2>
+          <a class="link" href="dashboard-payouts.html">مشاهده درخواست‌ها</a>
+        </header>
+        <ul class="list">
+          <li>
+            <span class="list__title">واریز AdSense خرداد — بانک ترکیه</span>
+            <p class="caption">وضعیت: پرداخت شد، رسید SWFT-3291 پیوست شد.</p>
+          </li>
+          <li>
+            <span class="list__title">درآمد اسپانسر آلفا — درهم</span>
+            <p class="caption">وضعیت: در انتظار تایید قرارداد بارگذاری شده.</p>
+          </li>
+          <li>
+            <span class="list__title">پرداخت سریع — کیف پول USDT</span>
+            <p class="caption">وضعیت: در صف تایید امنیت دو مرحله‌ای.</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card card--full" aria-label="همگام‌سازی امنیتی">
+      <header class="card__header">
+        <h2>پروتکل امنیت و کامپلاینس</h2>
+        <span class="badge badge--success">مطابق با الزامات گوگل</span>
+      </header>
+      <div class="split">
+        <div class="split__main">
+          <p>
+            برای فعال‌سازی پرداخت، ابتدا باید ایمیل خود را برای تیم ایگرگ تی ارسال کنی تا دسترسی Google Cloud
+            Console صادر شود. پس از تایید، ایمیل مالی رسمی ما از طریق واتساپ اتومیشن برایت ارسال می‌شود تا آن را
+            در لیست مجاز Google AdSense اضافه کنی.
+          </p>
+          <ul class="steps">
+            <li>ارسال ایمیل اصلی کانال به آدرس پشتیبانی ایگرگ تی</li>
+            <li>افزودن ایمیل مالی ایگرگ تی به سطوح دسترسی AdSense</li>
+            <li>آپلود قرارداد و مدارک KYC در این صفحه</li>
+            <li>فعال‌سازی احراز دو مرحله‌ای برای تایید تراکنش‌های بیش از ۵ هزار دلار</li>
+          </ul>
+        </div>
+        <aside class="split__aside">
+          <div class="status status--warning">
+            <h3>در انتظار تایید ایمیل</h3>
+            <p class="caption">لطفاً ایمیل <strong>payments@ytpromo.net</strong> را در Google Cloud اضافه کن.</p>
+          </div>
+          <div class="status">
+            <h3>پشتیبان اختصاصی</h3>
+            <p class="caption">نرگس رفیعی — WhatsApp: +971 50 123 45 67</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

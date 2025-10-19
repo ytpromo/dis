@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>درخواست‌های تسویه — ایگرگ تی | ytpromo.net</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard">
+  <aside class="sidebar" aria-label="ناوبری داشبورد">
+    <div class="sidebar__header">
+      <span class="logo">ایگرگ تی</span>
+      <p class="sidebar__subtitle">پرداخت حرفه‌ای درآمد یوتیوب در ytpromo.net</p>
+    </div>
+    <nav>
+      <ul class="sidebar__nav">
+        <li><a href="dashboard.html">نمای کلی</a></li>
+        <li><a class="is-active" href="dashboard-payouts.html">درخواست‌های تسویه</a></li>
+        <li><a href="dashboard-payments.html">اطلاعات پرداخت</a></li>
+        <li><a href="dashboard-channels.html">کانال‌های یوتیوب</a></li>
+        <li><a href="dashboard-uploader.html">استودیو آپلود</a></li>
+        <li><a href="dashboard-ai.html">ایده‌پرداز AI</a></li>
+        <li><a href="dashboard-analytics.html">تحلیل کانال</a></li>
+        <li><a href="dashboard-notifications.html">اعلان‌ها و واتساپ</a></li>
+        <li><a href="dashboard-settings.html">تنظیمات حساب</a></li>
+        <li><a href="index.html">صفحه اصلی</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <p>ورود به عنوان <strong>creator.iran</strong></p>
+      <button class="btn btn-secondary btn-small">خروج ایمن</button>
+      <span class="sidebar__status">پشتیبانی VIP ۲۴/۷ فعال است</span>
+    </div>
+  </aside>
+
+  <main class="dashboard__content">
+    <header class="topbar" aria-label="نوار ابزار سریع">
+      <form class="topbar__search" role="search">
+        <input class="input input--search" type="search" placeholder="جستجو در درخواست‌ها و پرداخت‌ها" />
+      </form>
+      <div class="topbar__actions">
+        <button class="btn btn-ghost btn-small" type="button">+ تسویه فوری</button>
+        <button class="btn btn-ghost btn-small" type="button">ارسال تیکت پشتیبانی</button>
+        <span class="topbar__status">
+          <span class="status-dot is-online" aria-hidden="true"></span>
+          سرویس پایدار
+        </span>
+        <div class="topbar__profile">
+          <span class="avatar" aria-hidden="true">CI</span>
+          <div>
+            <strong>creator.iran</strong>
+            <span class="caption">پارتنر پلاتین</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="page-header">
+      <div>
+        <nav class="breadcrumb" aria-label="مسیریابی">
+          <ol>
+            <li><a href="dashboard.html">داشبورد</a></li>
+            <li aria-current="page">درخواست‌های تسویه</li>
+          </ol>
+        </nav>
+        <p class="eyebrow">مدیریت حرفه‌ای پرداخت</p>
+        <h1>برنامه‌ریزی و پیگیری درخواست‌های تسویه</h1>
+        <p>
+          هر درخواست تسویه در ایگرگ تی با تایید چند مرحله‌ای و همگام‌سازی نرخ لحظه‌ای انجام می‌شود. این صفحه
+          مسیر کامل تبدیل درآمد دلاری به ریال یا سایر ارزها را نمایش می‌دهد.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button">ایجاد درخواست جدید</button>
+        <button class="btn btn-outline" type="button">رزرو مکالمه با کارشناس مالی</button>
+      </div>
+    </header>
+
+    <section class="card card--full" aria-label="لیست درخواست‌ها">
+      <header class="card__header">
+        <h2>درخواست‌های فعال</h2>
+        <div class="segmented">
+          <button class="segmented__btn is-active" type="button">همه</button>
+          <button class="segmented__btn" type="button">در انتظار پرداخت</button>
+          <button class="segmented__btn" type="button">پرداخت شده</button>
+        </div>
+      </header>
+      <div class="responsive-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">عنوان درخواست</th>
+              <th scope="col">مبلغ</th>
+              <th scope="col">وضعیت</th>
+              <th scope="col">موعد</th>
+              <th scope="col">اقدامات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="عنوان درخواست">تسویه AdSense خرداد</td>
+              <td data-label="مبلغ">۴٬۲۵۰ دلار</td>
+              <td data-label="وضعیت"><span class="badge badge--success">پرداخت شد</span></td>
+              <td data-label="موعد">۲۷ خرداد</td>
+              <td data-label="اقدامات">
+                <button class="btn btn-ghost btn-small" type="button">دریافت رسید</button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="عنوان درخواست">اسپانسرشیپ برند آلفا</td>
+              <td data-label="مبلغ">۱٬۷۰۰ دلار</td>
+              <td data-label="وضعیت"><span class="badge badge--warning">در انتظار اسناد</span></td>
+              <td data-label="موعد">۹ تیر</td>
+              <td data-label="اقدامات">
+                <button class="btn btn-secondary btn-small" type="button">ارسال قرارداد</button>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="عنوان درخواست">درآمد اکسپورت کانال دوم</td>
+              <td data-label="مبلغ">۸۵۰ دلار</td>
+              <td data-label="وضعیت"><span class="badge badge--neutral">در حال پردازش</span></td>
+              <td data-label="موعد">۱۲ تیر</td>
+              <td data-label="اقدامات">
+                <button class="btn btn-outline btn-small" type="button">پیگیری فوری</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid grid--two" aria-label="برنامه زمانی و اسناد">
+      <article class="card card--overlay">
+        <header class="card__header">
+          <h2>تایملاین تسویه</h2>
+          <span class="badge badge--success">میانگین ۷۲ ساعت</span>
+        </header>
+        <ol class="timeline timeline--horizontal">
+          <li class="timeline__item">
+            <span class="timeline__time">ثبت درخواست</span>
+            <div class="timeline__content">
+              <h3>گام ۱ — ورود اطلاعات</h3>
+              <p>فرم درخواست را با انتخاب کانال و دوره درآمدی تکمیل کن.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__time">تایید امنیت</span>
+            <div class="timeline__content">
+              <h3>گام ۲ — بررسی دو مرحله‌ای</h3>
+              <p>تایید ایمیل و واتساپ الزامی است تا انتقال وارد صف مالی شود.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__time">پرداخت</span>
+            <div class="timeline__content">
+              <h3>گام ۳ — تسویه</h3>
+              <p>پس از محاسبه نرخ توافقی، مبلغ به حساب اعلام شده واریز می‌شود.</p>
+            </div>
+          </li>
+        </ol>
+      </article>
+      <article class="card">
+        <header class="card__header">
+          <h2>مدارک موردنیاز</h2>
+          <a class="link" href="dashboard-payments.html">آپلود پروفایل مالی</a>
+        </header>
+        <ul class="checklist">
+          <li class="is-done">صورت‌وضعیت AdSense</li>
+          <li class="is-done">تطبیق شناسه پرداخت</li>
+          <li>قرارداد اسپانسرشیپ امضا شده</li>
+          <li>رسید واریز ارزی بانک مبدا</li>
+        </ul>
+        <p class="caption">مدارک را در قالب PDF یا لینک Google Drive ارسال کن تا تیم مالی بررسی کند.</p>
+      </article>
+    </section>
+
+    <section class="card card--full" aria-label="سیاست نرخ‌گذاری">
+      <header class="card__header">
+        <h2>نرخ‌های ویژه</h2>
+        <span class="badge badge--highlight">به‌روزرسانی روزانه</span>
+      </header>
+      <div class="rate-grid">
+        <div class="rate-card">
+          <h3>درآمد ثابت ماهانه</h3>
+          <p class="rate-card__value">۵.۹٪</p>
+          <p class="caption">برای پرداخت‌های بالای ۱۰ هزار دلار در ماه</p>
+        </div>
+        <div class="rate-card">
+          <h3>اسپانسرشیپ و همکاری برند</h3>
+          <p class="rate-card__value">۶.۴٪</p>
+          <p class="caption">شامل تبدیل چند ارزی و پیگیری مالیاتی</p>
+        </div>
+        <div class="rate-card">
+          <h3>درخواست فوری ۲۴ ساعته</h3>
+          <p class="rate-card__value">۷.۲٪</p>
+          <p class="caption">پرداخت در همان روز کاری با تایید مدیریت ریسک</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
