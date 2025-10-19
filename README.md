@@ -7,6 +7,7 @@ This repository now includes یک نمونه رابط کاربری ایستا ب
 ```
 frontend/
 ├── index.html                  # صفحه فرود فارسی با معرفی برند ytpromo.net
+├── adsense-exclusive.html      # لندینگ «ادسنس اختصاصی» با تمرکز بر نقد درآمد سطح پریمیوم
 ├── styles.css                  # استایل‌های مشترک برای سایت و تمام صفحات داشبورد
 ├── dashboard.html              # نمای کلی داشبورد با کارت‌های شاخص و میانبرها
 ├── dashboard-payouts.html      # مدیریت درخواست‌های تسویه و تایملاین پرداخت
