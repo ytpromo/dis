@@ -353,6 +353,10 @@ main {
   font-size: 0.95rem;
 }
 
+.plan-card .btn {
+  margin-top: auto;
+}
+
 .plan-card--featured {
   background: linear-gradient(160deg, rgba(255, 118, 63, 0.15), rgba(255, 118, 63, 0))
       rgba(16, 23, 52, 0.9);
